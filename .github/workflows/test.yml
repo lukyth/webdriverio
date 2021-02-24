@@ -26,5 +26,5 @@ jobs:
       - name: Dependency Check
         if: ${{ matrix.node-version == '14.x' }}
         run: npm run test:depcheck
-      - name: Lint / Typings / Unit / Smoke Tests
+      - name: Lint / Typings / Unit / Smoke Test
         run: npx run-s test:typings
